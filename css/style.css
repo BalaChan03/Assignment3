@@ -18,7 +18,6 @@ body{
     margin: 0px auto;
     padding: 0%;
 }
-
 .top{
     display: flex;
     justify-content: space-between;
@@ -62,11 +61,11 @@ nav ul li{
     line-height: 16.8px;
     list-style-type: none;
 }
-nav ul li a , .login-signup a{
-    text-decoration: none;
-    color: rgb(8, 8, 8);
+.login-signup .signup-box:hover
+{
+    transform: scale(1.1);
+    transition: .3s ease-out;
 }
-
 nav ul li .change_color 
 {
     color: grey;
@@ -127,6 +126,15 @@ nav ul li .change_color
 }
 .started{
     display: flex;
+    gap: 1rem;
+}
+.started .start:hover{
+    transform: scale(1.1);
+    transition: .3s ease-in-out;
+}
+.started .demo:hover{
+    transform: scale(1.1);
+    transition: .3s ease-in-out;
 }
 .start{
     width: 141px;
@@ -144,8 +152,8 @@ nav ul li .change_color
     justify-content: center;
     align-items: center;
     gap: 10px;
-    width:181px;
-    height:56px;
+    width:161px;
+    height:53px;
     padding: 16px 32px 16px 32px;
     border-radius: 100px;
     text-decoration: none;
@@ -335,6 +343,16 @@ nav ul li .change_color
     display: flex;
     gap: 32px;
 }
+.arrow-button .left-arw:hover
+{
+    transform: scale(1.1);
+    transition: .1s ease-out;
+}
+.arrow-button .right-arw:hover
+{
+    transform: scale(1.1);
+    transition: .1s ease-out;
+}
 .arw-btn{
     display: flex;
     justify-content: center;
@@ -350,14 +368,23 @@ nav ul li .change_color
     box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.08), 0px 7px 16px 0px rgba(0, 0, 0, 0.07), 0px 29px 29px 0px rgba(0, 0, 0, 0.06), 0px 65px 39px 0px rgba(0, 0, 0, 0.04), 0px 116px 46px 0px rgba(0, 0, 0, 0.01), 0px 181px 51px 0px rgba(0, 0, 0, 0);
     background: rgba(93, 80, 198, 1);
 }
-.places-list{
+.places-list {
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 100px;
+    justify-content: space-between; 
+    gap: 16px; 
+    width: 100%; 
+    margin-bottom: 150px;
 }
-.place{
-    width:350px;
-    height:575px;
+.place {
+    width: calc((100% - 48px) / 3); 
+    height: 600px; 
+    max-width: 400px;
+}
+.place img {
+    width: 100%;
+    height: auto; 
+    border-radius: 16px 0px 0px; 
+    object-fit: cover; 
 }
 .place-title{
     display: flex;
@@ -390,7 +417,6 @@ nav ul li .change_color
 .place-content h3{
     color: rgba(255, 87, 34, 1);
 }
-
 .p5-cnt-box{
     width: 206.5px;
     height:151px;
@@ -404,10 +430,11 @@ nav ul li .change_color
 }
 .page5{
     padding-bottom: 50px;
+    margin-bottom: 3rem;
 }
 .page5-contents{
     display: flex;
-    position: relative;
+    position: relative; 
     justify-content: space-between;
 }
 .page5-img{
@@ -640,6 +667,14 @@ nav ul li .change_color
     align-items: center;
     position: relative;
 }
+.page7 .left-arw:hover{
+    transform: scale(1.1);
+    transition: .3s ease-out;
+}
+.page7 .right-arw:hover{
+    transform: scale(1.1);
+    transition: .3s ease-out;
+}
 .testimonials-baground{
     position: absolute;
     top: -480px;
@@ -693,7 +728,7 @@ nav ul li .change_color
     font-weight: 700;
     line-height: 33.6px;
 }
-.star{
+.stars{
     padding: 40px;
 }
 .testimonials-description p{
@@ -707,6 +742,10 @@ nav ul li .change_color
     display: flex;
     flex-direction: row;
     gap: 20px;
+}
+.testimonials-pageswitch .dot:hover{
+    transform: scale(1.1);
+    transition: .3s ease-out;
 }
 .leftbtn{
     position: absolute;
@@ -744,21 +783,21 @@ nav ul li .change_color
 }
 .form-input{
     width:683px;
-    height:96px;
+    height:85px;
     padding: 32px 64px 32px 64px;
     font-size: 23px;
     font-weight: 700;
     line-height: 27.6px;
     border-radius: 32px;
     border: 1px solid transparent;
-    background: rgba(255, 255, 255, 1);
+    background-color: #FFFFFF;
 }
 .form-container{
     display: flex;
     position: relative;
     align-items: center; 
     justify-content: center;  
-    gap: 64px;
+    gap: 45px;
 }
 .form-box-head h2{
     font-size: 23px;
@@ -774,7 +813,7 @@ nav ul li .change_color
     line-height: 66px;
 }
 .subscribe-btn a{ 
-    padding: 32px 64px 32px 64px;
+    padding: 28px 40px 28px 40px;
     background: rgba(93, 80, 198, 1);
     border-radius: 32px;
     font-size: 23px;
@@ -782,6 +821,11 @@ nav ul li .change_color
     line-height: 27.6px;
     text-align: center;
     color: rgba(255, 255, 255, 1);
+}
+.subscribe-btn:hover
+{
+    transform: scale(1.1);
+    transition: .3s ease-out;
 }
 .page8{
     position: relative;
@@ -800,7 +844,6 @@ nav ul li .change_color
     top: 5300px;
     right:0%;
 }
-
 .footer{
     display: flex;
     justify-content: space-between;
@@ -831,7 +874,6 @@ nav ul li .change_color
 .ftr-nav ul li{
     list-style: none;
 }
-
 .footer-content-1 p{
     font-size: 23px;
     font-weight: 450;
@@ -841,6 +883,18 @@ nav ul li .change_color
 .ftr-social-cnt{
     display: flex;
     gap: 32px;
+}
+.ftr-social-cnt .facebook:hover{
+    transform: scale(1.1);
+    transition: .3s ease-out;
+}
+.ftr-social-cnt .twitter:hover{
+    transform: scale(1.1);
+    transition: .3s ease-out;
+}
+.ftr-social-cnt .instagram:hover{
+    transform: scale(1.1);
+    transition: .3s ease-out;
 }
 .ftr-nav ul li h2{
     font-size: 23px;
@@ -856,10 +910,19 @@ nav ul li .change_color
     text-align: left;
     color: rgba(25, 24, 37, 0.75);
 }
-.copy-right{
+.copyrights {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
     text-align: center;
-    padding: 50px 0px 30px 0px;
+    padding: 40px 0px 30px 0px;
 }
+
+.copyrights p {
+    font-size: 16px;
+    margin: 0;
+}
+
 .bar-content{
     display: none;
 }
